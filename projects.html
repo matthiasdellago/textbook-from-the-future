@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Projects - Textbook from the Future</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Projects</h1>
+  
+  <h2>Learning, Inference, Interpretability</h2>
+  
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Renormalization and Interpretability
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project will investigate the potential of renormalization techniques from physics to interpretability and AI safety by treating neural networks as multi-scale systems whose behavior changes across levels of abstraction. By importing renormalization group (RG) methods, the aim is to develop tools for coarse-graining neural representations, identifying universal structures, and distinguishing safe from unsafe features across scales. Ultimately, this research will connect QFT-inspired methods with the neural tangent kernel (NTK) and modern interpretability efforts, providing a principled framework for multi-level analysis. The goal is to develop RG-based tools that coarse-grain neural representations, identify universal structures, and separate safe from unsafe features.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> renormalization, RG flow, coarse-graining, universality, scale separation, interpretability, AI safety, effective theories, fixed points, feature abstraction, QFT methods, multi-scale modeling, representation space, implicit renormalization, explicit renormalization, Neural Tangent Kernel
+      </div>
+      <div class="people">
+        <strong>People:</strong> Dmitry Vaintrob, Lauren Greenspan, TBD
+      </div>
+    </div>
+  </div>
+  
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Loss Landscapes and Polyhedral Geometry
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project investigates the loss landscapes of deep linear and ReLU neural networks using polyhedral geometry and hyperplane arrangements. It seeks to decompose landscapes into two structures: a chamber complex defined by activation boundaries and a critical locus governed by combinatorial partitions. By systematically analyzing deep linear networks, affine networks, bias-free ReLU models, and full ReLU MLPs, the project will build a comprehensive "atlas" that unifies algebraic and combinatorial geometry with learning theory. The goal is to produce a foundational text that describes minima, saddles, local learning coefficients, and canonical subspaces, with implications for both interpretability and learning dynamics.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> loss landscapes, deep linear networks, ReLU MLPs, hyperplane arrangements, polyhedral complexes, partitions, critical locus, singular learning theory, tropical geometry, generating functions, saddle points, learning coefficient, matroids, moduli spaces, activation boundaries
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD, Simon-Pepin Lehalleur, Alexander Gietelink Oldenziel
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleProject(element) {
+      const content = element.nextElementSibling;
+      const isExpanded = content.classList.contains('expanded');
+      
+      if (isExpanded) {
+        content.classList.remove('expanded');
+        element.classList.remove('expanded');
+      } else {
+        content.classList.add('expanded');
+        element.classList.add('expanded');
+      }
+    }
+  </script>
+</body>
+</html>
