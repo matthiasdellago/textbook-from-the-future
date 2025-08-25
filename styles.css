@@ -151,6 +151,7 @@ blockquote.quote cite {
 .project-image {
   display: block;
   width: 100%;
+  max-width: 760px;
   height: auto;
-  margin-top: 12px;
+  margin: 12px auto 0;
 }
