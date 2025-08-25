@@ -1,0 +1,9 @@
+# OS
+.DS_Store
+
+# Ruby/Bundler artifacts
+vendor/
+.bundle/
+Gemfile.lock
+
+
