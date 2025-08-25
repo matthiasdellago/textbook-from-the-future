@@ -137,6 +137,10 @@ blockquote.quote cite {
   border-radius: 4px;
 }
 
+.figure.narrow img {
+  width: 80%;
+}
+
 .figure .caption {
   margin-top: 8px;
   color: #666;

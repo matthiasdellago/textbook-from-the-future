@@ -16,16 +16,20 @@
   <h1>FAQ</h1>
 
   <div class="project">
-    <div class="project-title" onclick="toggleProject(this)">Why theory?</div>
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Why theory?
+    </div>
     <div class="project-content">
       <p>Trial and error works when failure is cheap. For the alignment of superintelligent AI we may only have one try. Only mathematical theory can provide assurance when there is no second try.</p>
     </div>
   </div>
 
   <div class="project">
-    <div class="project-title" onclick="toggleProject(this)">Isn't alignment unsolved — how can you write a textbook on it?</div>
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Isn't Alignment unsolved, how can you write a textbook on it?
+    </div>
     <div class="project-content">
-      <p>The Textbook from the Future is a concept introduced by Yudkowsky.</p>
+      <p>The Textbook from  the Future is a concept introduced by Yudkowsky. </p>
       <blockquote class="quote">
         “So, if we had the <strong>textbook from the future</strong>, like we have the textbook from 100 years in the future, which contains all the simple tricks that actually work robustly, then it would be much easier. But right now, we don't have that. We're groping in the dark.”
         <cite>— Eliezer Yudkowsky</cite>
@@ -34,150 +38,377 @@
         “If you have the <strong>Textbook From 100 Years In The Future</strong> that gives the simple robust solutions for everything, that actually work, you can write a super-intelligence that thinks 2+2=5 because the Textbook gives the methods for doing that which are simple and actually work in practice.”
         <cite>— Eliezer Yudkowsky</cite>
       </blockquote>
-      <p>While the specific contents are beyond our current knowledge, we can already guess its overall gestalt—the table of contents. We are not certain of the answers, but we do know the questions it must answer. Committing that “table of contents” to paper gives a skeleton the community can flesh out, and the work can start now.</p>
+      <p>While the specific contents are obviously beyond our current knowledge, we can already guess at its overall gestalt; the table of contents. In other words, we are not certain of the answers contained in the textbook but we do know the questions it must answer. By committing the table of contents to paper we will have a skeleton that the community can flesh out. Importantly we can already start now! Even unfinished the textbook will enable scholars to draw from a coherent canon.</p>
     </div>
   </div>
 
   <div class="project">
-    <div class="project-title" onclick="toggleProject(this)">Why a textbook?</div>
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Why a Textbook?
+    </div>
     <div class="project-content">
-      <p>The textbook is a coordination instrument—a shared context for a research programme and a tool for establishing coherence in the field. It is a blueprint for a solution and an onboarding tool for new researchers, experts from other fields, and future AIs.</p>
+      <p>The textbook is a coordination instrument. In some ways it is more accurate to think of it as the shared context of a research programme, and as a tool for establishing coherence in the field. It is the blueprint of the solution. Simultaneously it is also an onboarding tool, for new researchers, experts from other fields, and of course AIs.</p>
       <blockquote class="quote">The textbook from the future is nothing without its people.</blockquote>
     </div>
   </div>
 
   <div class="project">
-    <div class="project-title" onclick="toggleProject(this)">What specific failure modes do you expect current red-teaming and oversight to miss?</div>
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      What specific failure modes do you anticipate that current red-teaming and oversight would miss?
+    </div>
     <div class="project-content">
-      <p>The framing of “specific failure modes” is common but can mislead. Purely training on behavioral (black‑box) loss functions selects for deceptiveness in the limit. Thoughts are upstream of actions; a sufficiently smart adversary may lie in wait. The deeper problem is structural: advanced systems will be strongly optimized for deception when oversight itself is the bottleneck. Red‑teaming can find surface‑level bugs, but not the core incentive toward concealed misalignment.</p>
+      <p>The framing of 'specific failure modes' is common, but may be misleading. 
+      <br>In short, purely training on behavioural [or ' blackbox'] loss functions trains for deceptiveness in the limit. Thoughts are upstream of actions. A sufficiently smart adversary may lie in wait.
+      <br>Instead we focus on the fundamental tendency towards deceptiveness. </p>
+      <p>The deeper problem is structural: advanced systems will be strongly optimized for deception when oversight itself is the bottleneck. Current red-teaming can find surface-level bugs, but not the core issue — that the system has incentives to conceal its own misalignment. The central risk is not a particular overlooked bug, but the general tendency towards hidden deceptiveness.</p>
     </div>
   </div>
 
   <div class="project">
-    <div class="project-title" onclick="toggleProject(this)">I am skeptical that AI is actually useful in research</div>
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      I am skeptical that AI is actually useful in research
+    </div>
     <div class="project-content">
-      <p>Already, our work would not be possible without reasoning models. Two chapters—on training dynamics of SGD and on polyhedral geometry and neural network architectures—became tractable only with strong reasoning models in late 2024. The needed expertise (continuum limits and SDEs, spectral theory of Fokker–Planck operators, polyhedral geometry) is rare; AI assistance unlocks leverage.</p>
+      <p>Already, the work our researchers are doing would not be possible without reasoning models.
+      <br>Two of the chapters [on training dynamics of SGD and polyhedral geometry and neural network architectures] have only become possible to work on profitably with the advent of reasoning models in late 2024. 
+      <br>The technical expertise required to push the frontier in these fields [continuum limits and stochastic differential equation, spectral theory of Fokker-Planck operators, polyhedral geometry ] is considerable - the number of researchers in the world in each subarea is probably less than a hundred. </p>
     </div>
   </div>
 
   <div class="project">
-    <div class="project-title" onclick="toggleProject(this)">Is this a nerdsnipe? Why not focus on evals, CoT, mechanistic interpretability?</div>
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      I think this is a huge nerdsnipe. You should be working on useful things like evals, CoT interpretability or mechanistic interpretability... etc. Why are you so sure prosaic alignment methods won't work?
+    </div>
     <div class="project-content">
-      <p>We cannot yet know if we live in the “easy alignment” or “hard alignment” world. Prosaic methods cover much of the easy regime; the hard regime is neglected. Our approach complements prosaic methods by developing the theoretical spine needed if the world is on the difficult side of the spectrum.</p>
+      <p>Currently there is simply not enough information available to know with certainty if we live in a world where alignment is easy or difficult. Chris Olah sketched out alignment difficulty on the graph below:</p>
+      <div class="figure narrow">
+        <img src="images/FyCIg8_aQAAp0f3.jpg" alt="Chris Olah’s alignment difficulty spectrum">
+        <div class="caption">Chris Olah’s alignment difficulty spectrum (<a href="https://x.com/ch402/status/1666482929772666880" target="_blank" rel="noopener">source</a>)</div>
+      </div>
+      <p>Evaluations, chain-of-thought interpretability, and mechanistic interpretability are important, and many researchers are already advancing them. We believe the left side is well covered by prosaic alignment, but given the current state of knowledge significant probability mass must be given to the difficult side of the graph. We believe that currently the difficult end of the spectrum ('Apollo - P vs NP') is significantly neglected due to low legibility. Our approach is not opposed to but fundamentally complementary to prosaic methods.</p>
     </div>
   </div>
 
   <div class="project">
-    <div class="project-title" onclick="toggleProject(this)">My favorite topic X isn’t mentioned</div>
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      You claim this is the standard Alignment textbook but my favorite topic X is not even mentioned?
+    </div>
     <div class="project-content">
-      <p>We aim for a <em>selective synthesis</em>. It’s a big tent but not a kumbaya; favorites may not appear.</p>
+      <p>We believe in a<em> selective synthesis</em>. We work in a Big Tent but we are not Kumbaya. That means favorites may not appear. </p>
     </div>
   </div>
 
   <div class="project">
-    <div class="project-title" onclick="toggleProject(this)">You misattributed idea X</div>
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      You say idea X was discovered by person Y, but my friend's uncle cousin's surgeon Jürgen already discovered idea X in minus 3000 BC, he just called it "Z". 
+    </div>
     <div class="project-content">
-      <p>Scholarly credit matters. If you have suggestions or corrections about authorship, contributions, or credit allocation, please contact us.</p>
+      <p>We think intellectual credit allocation and the virtue of Scholarship are very important, actually! The standards in the alignment community are currently insufficient.</p>
+      <p>If you have suggestions, comments, and corrections about authorship, intellectual contributions, or credit allocation, please do get in contact with us! </p>
     </div>
   </div>
 
   <div class="project">
-    <div class="project-title" onclick="toggleProject(this)">What if topic X is irrelevant and topic Y is crucial?</div>
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      What if we discover that topic X is irrelevant while topic Y is much more important? Won't we need to rewrite the whole textbook?
+    </div>
     <div class="project-content">
-      <p>It’s a living document. Think of a hybrid between a curated encyclopedia and a linear textbook; we will adapt as evidence accumulates.</p>
+      <p>Yes, it's a living document. 
+      <br>If you are familiar with the stack projects - it's a mixture of a wiki-style encyclopedia and a linear textbook-style document. We will move towards something in this vein. </p>
     </div>
   </div>
 
   <div class="project">
-    <div class="project-title" onclick="toggleProject(this)">Future architectures will differ—won’t this make the work obsolete?</div>
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      The architecture of tomorrow might be completely different from the way AI works today. Won't this make everything you do now obsolete?
+    </div>
     <div class="project-content">
-      <p>Yes and no. AI will look different, but mathematics yields timeless knowledge. Much of the book concerns fundamentals (simplicity/degeneracy, abstractions, agent foundations, learning theory). We expect these to persist. Moreover, we can already anticipate the increasing role of reinforcement learning.</p>
+      <p>Yes and no. </p>
+      <p>AI will look different in the future from what it is today, but through mathematics, we will still obtain knowledge that will be timeless. Most of the textbook deals with much more fundamental ideas than LLMs (e.g. simplicity/degeneracy, abstractions, agent foundations, learning theory).  We are certain that these will continue to be relevant.
+      <br>Moreover, we have a pretty clear sense of where the future of AI will be heading and can anticipate what we need to work on., i.e. the future is reinforcement learning. </p>
     </div>
   </div>
 
   <div class="project">
-    <div class="project-title" onclick="toggleProject(this)">Why a megaproject? Can megaprojects work in theory?</div>
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Why a Megaproject? And can megaprojects work for theory?
+    </div>
     <div class="project-content">
-      <p>Yes. Despite the myth of isolated genius, large coordinated efforts have driven major theoretical progress (from Euclid’s Elements to EGA/SGA and modern megaprojects). Waiting for miracles is not a plan; organized theory is actionable.</p>
+      <p>Yes! In the public imagination, theory progresses via eponymous 'eureka' moments of hermetic geniuses, probably because stories like Einstein's annus mirabilis are so compelling. But in fact, much of theoretic progress happens via large-scale concerted efforts.
+      <br>In fact, the western mathematical tradition rests on one of these: Euclid's Elements. In modern times Éléments de Géométrie Algébrique and Séminaire de Géométrie Algébrique, was such a megaproject with great success.
+      <br>In our foreword, we have listed and analysed a collection of such large-scale theoretic efforts.
+      <br>This is important for alignment: Waiting for a stroke of genius is dangerous and not actionable, but a megaproject can be forced.</p>
       <blockquote class="quote">
-        <p>“Take for example the task of proving a theorem that remains hypothetical... One approach is the hammer and chisel... The other is the sea. The sea advances insensibly and in silence... yet it finally surrounds the resistant substance.”</p>
-        <cite>— Alexander Grothendieck</cite>
+        “Take for example the task of proving a theorem that remains hypothetical (to which, for some, mathematical work seems to be reduced). I see two extreme approaches to doing this.<br><br>
+        One is that of the hammer and chisel, when the problem posed is seen as a large nut, hard and smooth, whose interior must be reached, the nourishing flesh protected by the shell. The principle is simple: you put the cutting edge of the chisel against the shell, and hit it hard. If necessary, you repeat the process in several different places, until the shell cracks—and you are satisfied.
+        <br>[...]
+        <br>I can illustrate the second approach with the same image of a nut to be opened. The first analogy that came to my mind is of immersing the nut in some softening liquid, and why not simply water? From time to time you rub so the liquid penetrates better, and otherwise you let time pass. The shell becomes more flexible through weeks and months—when the time is ripe, a touch of the hand is enough, and the shell opens like a perfectly ripened avocado!
+        <br>[...]
+        <br>A different image came to me a few weeks ago. The unknown thing to be known appeared to me as some stretch of earth or hard marl, resisting penetration. One can go at it with pickaxes or crowbars or even jackhammers: this is the first approach, that of the “chisel” (with or without a hammer). The other is the sea. The sea advances insensibly and in silence; nothing seems to happen, nothing moves, the water is so far off you hardly hear it… yet it finally surrounds the resistant substance.” - Alexander Grothendiek (https://shreevatsa.net/post/grothendieck-approaches)
       </blockquote>
     </div>
   </div>
 
   <div class="project">
-    <div class="project-title" onclick="toggleProject(this)">How does this relate to Safeguarded AI (davidad’s plan)?</div>
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Have you heard about davidad's plan for AI safety? How does this project relate to Safeguarded AI?
+    </div>
     <div class="project-content">
-      <p>The safeguarded AI program develops a safety envelope around always‑dangerous systems. Key differences:</p>
+      <p>The safeguarded AI programme aims to use advanced mathematics to develop a safety envelope for an always assumed dangerous superintelligence. </p>
+      <p>There are some significant differences as well:</p>
       <ul>
-        <li>That plan focuses on <em>control</em>; we focus on <em>alignment</em>.</li>
-        <li>It follows one person’s vision; we synthesize many theory‑driven agendas.</li>
-        <li>It is a plan; this is a program—open directions rather than a fixed blueprint.</li>
+        <li>davidad's plan is a plan for <em>controlling AI</em> not alignment. We are focused on alignment.</li>
+        <li>The davidad plan follows the vision of a single individual. The Textbook of the Future is a communal effort to bring together in fruitful synthesis a number of theory-driven research agendas. </li>
+        <li>The davidad plan is a plan. The Textbook of the Future is not a plan but a programme: open research directions rather than a premeditated blueprint. </li>
         <li>This book does not use category theory.</li>
       </ul>
     </div>
   </div>
 
   <div class="project">
-    <div class="project-title" onclick="toggleProject(this)">Will you use Lean or other automated theorem provers?</div>
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Have you heard of Lean? Will you use Automatic Theorem provers?
+    </div>
     <div class="project-content">
-      <p>As of 2025, automated theorem provers are not yet practical for everyday research. The hardest problems in theoretical alignment are primarily about formalizing ideas and deriving algorithms, not about proving isolated deep theorems. That said, integrating provers with reasoning models is the natural next step, and we plan to adopt them when competitive.</p>
+      <p>As of August 2025 automatic theorem provers are not yet practical for everyday use in research mathematics. </p>
+      <p>Additionally, the hardest problems in theoretical alignment are not primarily questions of proving hard theorems. Rather, the challenge is formulating informal arguments and intuitions in formal mathematics — and subsequently turning that into concrete algorithms. </p>
+      <p>That said, integrating automatic theorem provers with reasoning models is the natural next step and we anticipate making use of these systems when they become competitive. </p>
     </div>
   </div>
 
   <div class="project">
-    <div class="project-title" onclick="toggleProject(this)">Has theory already failed?</div>
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Has theory not already failed?
+    </div>
     <div class="project-content">
-      <p>Reports of the death of theory are exaggerated—often a matter of fads and legibility. Important theoretical pieces for alignment already exist and are being extended.</p>
+      <p>We think the report of the death of theory is greatly exaggerated - more a function of fads and lack of legibility than scientific obstructions. We believe there is far too much pessimism in this regard, and that theoreticians today are already holding important puzzle pieces for solving alignment.</p>
     </div>
   </div>
 
   <div class="project">
-    <div class="project-title" onclick="toggleProject(this)">How does this relate to other approaches?</div>
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      How does it relate to other approaches?
+    </div>
     <div class="project-content">
-      <p>The textbook will cover, among other things:</p>
+      <p>The textbook will cover, amongst other things, </p>
       <ul>
-        <li>Heuristic Arguments (ARC)</li>
-        <li>Developmental Interpretability (devInterp), based on Watanabe’s Singular Learning Theory</li>
-        <li>Safety‑by‑debate (Irving et al.)</li>
-        <li>Computational mechanics approaches to interpretability</li>
-        <li>Theoretical reward learning</li>
-        <li>Agent Foundations (MIRI, Kosoy, Wentworth, and others)</li>
-        <li>Universal intelligence (AIXI by Hutter, Legg, etc.)</li>
+        <li>The Heuristic Arguments agenda pursued by ARC</li>
+        <li>the Developmental Interpretability (devInterp) pioneered by Timaeus Research and based on Watanabe's Singular Learning theory</li>
+        <li>The safety-by-debate agenda by Irving et al.</li>
+        <li>the computational Mechanics approach to mechanistic interpretability pioneered by Simplex</li>
+        <li>the theoretical reward learning agenda</li>
+        <li>the Agent Foundations agenda, including the classical work done by MIRI's Agent Foundations team, Vanessa Kosoy's Learning-Theoretic Agenda, Wentworth's Natural Abstraction agenda, and many others. </li>
+      </ul>
+      <p>additionally, </p>
+      <ul>
+        <li>Universal Intelligence through AIXI by Hutter, Shane, Legg, etc</li>
       </ul>
     </div>
   </div>
 
   <div class="project">
-    <div class="project-title" onclick="toggleProject(this)">Timelines are too short!</div>
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Timelines are too short!
+    </div>
     <div class="project-content">
-      <p>If alignment is easy, prosaic alignment may suffice; if it is hard, a large‑scale theoretical effort is exactly what’s needed. Mathematics is highly leveraged by AI—our work is already accelerated by current tools, and that leverage will increase.</p>
-      <blockquote class="quote">The metaphor I usually use is that <strong>if a textbook from one hundred years in the future fell into our hands</strong>, containing all of the simple ideas that actually work robustly in practice, we could probably build an aligned super‑intelligence in six months. <cite>— Eliezer Yudkowsky</cite></blockquote>
+      <p>In a short timelines world where alignment is easy prosaic alignment solves the problem, if it is difficult we have already lost.
+      <br>In a medium-short timeline world where is alignmnet is difficult, and prosaic approaches are not sufficient, a large scale theoretic effort is exactly what is needed. We are optimistic that we can manage quite short timelines because mathematics is extremely leveraged on AI. Already now our research is massively accelerated by current AI tools and by end of 2028 the majority of work will be done by AIs. Researchers will increasingly become managers. </p>
+      <blockquote class="quote">
+        The metaphor I usually use is that <strong>if a textbook from one hundred years in the future fell into our hands</strong>, containing all of the simple ideas that actually work robustly in practice, we could probably build an aligned super-intelligence in six months.
+        <cite>— Eliezer Yudkowsky</cite>
+      </blockquote>
     </div>
   </div>
 
   <div class="project">
-    <div class="project-title" onclick="toggleProject(this)">That seems very aggressive. Are you claiming finishing the textbook is alignment‑complete?</div>
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      That seems very aggresive. Aren't you admitting that completing the textbook is alignment-complete?
+    </div>
     <div class="project-content">
-      <p>No. The goal is to make the key questions legible and tractable, build a theoretical spine, and coordinate a community toward concrete progress.</p>
+      <p>Yes.</p>
     </div>
   </div>
 
-  <!-- BEGIN AI SLOP (commented out per request) -->
   <!--
-  --- FAQ Distillation FROM PFAU ---
-  Content omitted intentionally for now. Keeping as a placeholder to integrate later.
+    GLOBAL COMMENT BLOCK (preserves the entire “unfinished/sloppy” section, but expressed in HTML).
 
-  --- WARNING: AI SLOP SUMMARY BELOW ---
-  Additional Q&A items about wiki vs monograph, value proposition, quality control, structure, empirics linkage, engagement mechanisms, academics outreach, comparison with forums/Discord, openness, etc.
+    --- BELOW THIS LINE LIVES THE UNFINISHED AND THE SLOPPY. BEWARE ---
+
+    <section aria-label="Unfinished and Sloppy (Commented Out)">
+      <h2>FAQ Destillation FROM PFAU</h2>
+
+      <div class="project">
+        <div class="project-title">Who will contribute?</div>
+        <div class="project-content">
+          <p>Several dozen domain experts across foundations of deep learning, agency/RL, and the major alignment agendas. It’s a big tent but opinionated—a “mosaic, not kumbaya”—so inclusion is based on seriousness and relevance. Entries are written by subject-matter experts (including adjacent academic communities) in a living-reference style, similar in spirit to the Stanford Encyclopedia of Philosophy.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Do theory megaprojects actually work?</div>
+        <div class="project-content">
+          <p>Yes—when they’re editor-led, opinionated, and built as living references rather than static tomes. Successful precedents in mathematics include EGA/SGA, the Langlands program, the classification of finite simple groups, and The Stacks Project. We’re copying the parts that worked:</p>
+          <ul>
+            <li>Coherent definitions/notation across chapters; a monograph-like spine.</li>
+            <li>Strong editorial board and chapter leads.</li>
+            <li>Clear contribution standards, real peer review, and rigorous citation/credit.</li>
+            <li>Online-first infra with continuous updates and versioning.</li>
+            <li>Open problems front-and-center, with prizes, workshops, and targeted outreach to adjacent experts.</li>
+          </ul>
+          <p>We’re applying that template to alignment:  a coherent, maintained reference that rallies contributors and makes the field’s key questions legible—and tractable.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Is this a wiki or a coherent monograph?</div>
+        <div class="project-content">
+          <p>Not a wiki. Wikis like nLab are too fragmented. This is closer to EGA, the Stacks Project, Langlands, or the classification of finite groups: a collaborative but coherent project with a single editorial line.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">What is the value here? What are you working towards?</div>
+        <div class="project-content">
+          <p>Unlike math megaprojects, there’s no single clean theorem statement. The value is making open questions and folk knowledge coherent and legible—both inside the community and to outsiders. Knowledge percolates less than people think; a lot is locked in Discords or people’s heads. A central, living reference helps set shared context for both humans and (eventually) AI use.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">How will you ensure quality?</div>
+        <div class="project-content">
+          <p>It must start strong. If the early chapters look like just “good” lit reviews, the project will fail. The bar is higher: opinionated, technically serious writing with real references. Both authors and editors enforce this. The first wave should also be broad enough that it’s clear we’re building more than just a monograph on one subfield.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">How will chapters be structured?</div>
+        <div class="project-content">
+          <p>Each chapter should open with the problem, why it matters, and the background. Then: concrete open questions, predictions, or tasks that can be measured. The goal is to make the frontier visible and tractable.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">How will theory connect to empirics?</div>
+        <div class="project-content">
+          <p>We want measurables. For example: give a simple dataset and ask for convergence-time predictions, or teacher–student scaling. We can run the experiments ourselves, but the theory should aim to predict them. This creates a tight loop between formal work and concrete numbers.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">What engagement mechanisms will you use?</div>
+        <div class="project-content">
+          <p>Open questions should be front-and-center. We’ll organize conferences, publish problem lists, and offer prizes. Workshops and in-person outreach also matter. Money helps with convening, but the real draw is making the questions legible and exciting.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Will you involve adjacent academic communities?</div>
+        <div class="project-content">
+          <p>Yes. Many of the deep technical questions (like Fokker–Planck operators) already live in math and physics subfields. We want to bridge alignment to those communities and counter founder effects by showing how their expertise connects to our problems.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">How is this different from LessWrong/Discord churn?</div>
+        <div class="project-content">
+          <p>Those platforms are like newspapers—useful but ephemeral, dominated by personal obsessions. Posts vanish, folk knowledge never consolidates. This project is more like the Stanford Encyclopedia of Philosophy: persistent, curated, expert-written, and designed to last.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Will it be open?</div>
+        <div class="project-content">
+          <p>Yes. It will be open, online-first, and continuously updated as a living reference. The aim is that anyone can read it, see the technical details, and build from there.</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="project">
+        <div class="project-title">Who will actually write this?</div>
+        <div class="project-content">
+          <p>Several dozen researchers. It’s a <em>mosaic, not kumbaya</em>: we want all the serious agendas represented, but not everything makes it in. Expect deep learning foundations, agency, RL theory, and adjacent math/physics.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">So... is this a wiki?</div>
+        <div class="project-content">
+          <p>No. Wikis sprawl and drift. This is closer to the Stacks Project or EGA: a coherent, opinionated reference with an editorial spine.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">How is this different than lesswrong?</div>
+        <div class="project-content">
+          <p></p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">How could this fail?</div>
+        <div class="project-content">
+          <p>By being average. If the first chapters look like just “good” lit reviews, the project dies. It has to start exceptional—broad enough to show ambition, and opinionated enough to be worth reading.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">How will you keep the quality high?</div>
+        <div class="project-content">
+          <p>Strong editorial control plus expert authorship. It’s not a neutral dump; it’s opinionated and technically serious, with references and clear arguments.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">What does a chapter look like?</div>
+        <div class="project-content">
+          <p>Each one starts with the problem and why it matters, then the background, and then the open questions or predictions that follow. Think: what you’d get from a really good seminar talk written down and maintained.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Isn’t theory hopeless without empirics?</div>
+        <div class="project-content">
+          <p>We want measurables. For example: “how many epochs until convergence on MNIST-to-Omniglot?” or “what’s the scaling law for teacher–student setups?” We can run the experiments, but the theory should be aiming to predict them.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">How do you get people engaged?</div>
+        <div class="project-content">
+          <p>Make the open problems legible. Then put them in front of people: conferences, workshops, prizes. Money helps for convening, but the main draw is giving experts concrete problems they can actually bite into.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Will you involve academics outside alignment?</div>
+        <div class="project-content">
+          <p>Yes. Many of the hard questions (like Fokker–Planck operators) already live in math and physics. Part of the job is showing those communities why their tools matter here, and pulling them in.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">How is this different from LessWrong or Discord?</div>
+        <div class="project-content">
+          <p>Those are like newspapers: fast, full of obsessions, but the knowledge vanishes. This is meant to be like the Stanford Encyclopedia of Philosophy: curated, maintained, and built to last.</p>
+          <p>Right now most knowledge lives in lesswrong, Discords, blog posts, papers, and people’s heads. It disappears fast. The value is collecting open questions and folk knowledge, making them coherent, and giving the field a shared context outsiders can actually read.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Will it be online?</div>
+        <div class="project-content">
+          <p>Yes. It will live online, open and continuously updated. A living reference, not a frozen PDF.</p>
+        </div>
+      </div>
+      
+      
   -->
-  <!-- END AI SLOP -->
-
   <script>
     function toggleProject(element) {
       const content = element.nextElementSibling;
       const isExpanded = content.classList.contains('expanded');
+      
       if (isExpanded) {
         content.classList.remove('expanded');
         element.classList.remove('expanded');
@@ -189,5 +420,3 @@
   </script>
 </body>
 </html>
-
-
