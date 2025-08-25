@@ -14,9 +14,261 @@
     <a href="faq.html">FAQ</a>
   </nav>
   <h1>Projects</h1>
-  
-  <h2>Learning, Inference, Interpretability</h2>
-  
+
+  <h2>A. Learning, Inference, Interpretability</h2>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Simplicity and Degeneracy
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        The no free lunch theorems imply that no learning cannot occur without inductive biases. However, Solomonoff induction proposes an alternative view by imposing a simplicity prior under which shorter descriptions are exponentially more likely. Relatedly, because many descriptions collapse to the same effective structure (padding/dead-code; coding theorem), degeneracy and simplicity often coincide. This leads to a crucial question: to what extent do modern LLMs approximate Solomonoff induction? Following these ideas, the project will combine theoretical arguments with toy neural network examples, highlighting how degeneracy underpins simplicity in both algorithmic and practical learning contexts.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> simplicity, degeneracy, no free lunch theorems, Solomonoff induction, coding theorem, padding arguments, dead-code, simplicity prior, large language models, approximate induction, neural networks, inductive bias
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Universal Predictors
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This unified project studies the theory of universal prediction under different paradigms: the Minimum Description Length (MDL) principle, Solomonoff induction, resource-bounded Solomonoff predictors, logical inductors, and their connections to generalization theory. The aim is to understand how compression, algorithmic probability, and logical uncertainty provide foundations for prediction, calibration, and reasoning under computational constraints. The project aims to investigate the potential of these ideas to explore classical regret bounds and in-distribution vs out-of-distribution error.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> MDL, Solomonoff induction, logical induction, algorithmic probability, compression, regret bounds, resource-bounded reasoning, out-of-distribution generalization, distribution shift, Logical inductors
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Causality
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project surveys causality as a foundation for learning, abstraction, and alignment. Building on Pearl’s structural causal models, Rubin’s potential outcomes, and recent developments in causal representation learning, the project will investigate how causal structure enables robust generalization under distribution shift. Topics include identifiability, causal abstraction, invariance principles, and interventions in reinforcement learning. Optional subjects may include causal factor sets and algorithmic information theory approaches to causality. Connections will be drawn to algorithmic information theory, rate–distortion, and selection theorems, positioning causality as a unifying lens for learning systems that must operate safely in dynamic and uncertain environments.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> causality, structural causal models, potential outcomes, causal abstraction, invariance, interventions, distribution shift, generalization, causal representation learning, reinforcement learning, Causal Incentives, factored sets
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Abstractions and Coarse-graining
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project will build a common ground unifying the diverse formalizations of abstraction across different disciplines. This project will build a comprehensive survey of approaches to abstraction, exploring concepts such as frequentist and Bayesian sufficient statistics, information bottleneck and other methods for “leaky abstractions”, causal abstractions for robustness under interventions, and algorithmic-information-theoretic approaches. The project will also cover different approaches to explain the relevance of abstractions, including Wentworth Natural Abstraction program and the work of George Konidaris on the need of abstractions for multi-purpose systems, and investigate the potential of abstractions to understand capabilities and generalization.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> sufficient statistics, Bayesian inference, algorithmic information theory, causal abstraction, supervised learning, reinforcement learning, interpretability, Eisenstat condensation, latent abstractions, Koopman–Pitman–Darmois theorem, Shalizi macrostates, thermodynamics, exponential families, Minimum Description Length Principle, lossless compression, lossy compression
+      </div>
+      <div class="people">
+        <strong>People:</strong> Wentworth, TBD
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Lossy Compression and Sparse Coding
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project investigates sparse coding and its deep connections to rate–distortion theory as frameworks for efficient representation. Sparse coding posits that data can be represented by a small number of active components from an overcomplete basis, yielding efficient and interpretable representations. The project will situate this principle within classical rate–distortion theory, algorithmic rate–distortion, and the information bottleneck method, extending to causal rate–distortion frameworks that incorporate dynamics and interventions. Further connections will be drawn to geometric compression tools like the Johnson–Lindenstrauss lemma, as well as error-correcting codes that balance redundancy with efficiency. The overarching aim is to synthesize sparsity and rate–distortion as dual principles of representation, generalization, and interpretability in AI and learning systems.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> sparse coding, rate–distortion theory, information bottleneck, algorithmic rate–distortion, causal rate–distortion, Johnson–Lindenstrauss lemma, error-correcting codes, efficient representation, interpretability, generalization, compression
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Computational Mechanics
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project will provide a comprehensive overview of computational mechanics, with a particular focus on James Crutchfield’s program and Simplex’s “belief state geometry” agenda. Computational mechanics develops minimal predictive models (ε-machines) that capture the causal states of stochastic processes, distinguishing between generative and predictive complexity. The project will survey entropy rate, predictive efficiency, the mixed-state presentation, causal state reconstruction, and the geometry of belief states, and evaluate how these concepts can be applied to AI systems, especially transformers and reinforcement learning. The aim is to establish computational mechanics as a rigorous tool for analyzing internal representations and emergent behavior in modern machine learning.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> computational mechanics, ε-machines, belief state geometry, predictive complexity, generative complexity, causal states, entropy rate, predictive efficiency, transformers, mixed-state presentation, meromorphic functional calculus, interpretability
+      </div>
+      <div class="people">
+        <strong>People:</strong> Paul Riechers, Adam Shai, TBD
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Singular Learning Theory
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        TBD
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong>
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Algorithmic Statistics
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project explores the framework of algorithmic statistics, which connects Kolmogorov complexity, sufficient statistics, and model selection. Algorithmic statistics defines a sufficient statistic as the simplest model 𝑆 that explains a given string 𝑥 without losing predictive information. The project will cover the basics of algorithmic statistics, the relation to the MDL principle, the role of sophistication and the K-structure function, and explicit examples in deep linear networks (DLNs) and ReLU networks. A major focus will be the resource-bounded setting, where distinctions emerge between enumerative vs. decision complexity. This extension reframes algorithmic statistics as a theory of “simple explanations under computational constraints,” with implications for both statistical learning and complexity theory.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> algorithmic statistics, Kolmogorov complexity, sufficient statistic, MDL principle, sophistication, K-structure function, nonstochastic strings, PSPACE, KT-complexity, resource-bounded complexity, generative vs decision complexity, deep linear networks, ReLU networks
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Heuristic Arguments
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project develops the theory of heuristic arguments as a relaxed notion of proof, combining ARC’s recent work on heuristic estimators with the “No Coincidence Principle” (NCP). The ARC agenda formalizes heuristic estimators with coherence properties like linearity, composition, and covariance propagation, yielding tractable approximations to otherwise intractable inference. The NCP reframes this: when an event 𝑅 seems like an “outrageous coincidence,” there must exist a structure or statistic 𝑆 such that 𝑝(𝑅∣𝑆) is high, even if 𝑝(𝑅) is low. This generalizes proofs, explanations, and reasons as sufficient statistics, balancing description length against probability gain. The project situates heuristic arguments at the interface of logic and probability, connects them to free energy functionals, OOD generalization, and mechanistic anomaly detection, and explores their role as a practical substitute for formal proofs in alignment contexts.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> heuristic arguments, No Coincidence Principle, probabilistic reasoning, ARC heuristic estimators, sufficient statistics, free energy functional, calibration, relaxed proofs, generalization, anomaly detection, low-probability estimation, interpretability, AI alignment
+      </div>
+      <div class="people">
+        <strong>People:</strong> George Robinson (ARC), AGO
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      ReLU Neural Networks and Polyhedral Geometry
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project investigates the loss landscapes of deep linear and ReLU neural networks using polyhedral geometry and hyperplane arrangements. It seeks to decompose landscapes into two structures: a chamber complex defined by activation boundaries and a critical locus governed by combinatorial partitions. By systematically analyzing deep linear networks, affine networks, bias-free ReLU models, and full ReLU MLPs, the project will build a comprehensive “atlas” that unifies algebraic and combinatorial geometry with learning theory. The goal is to produce a foundational text that describes minima, saddles, local learning coefficients, and canonical subspaces, with implications for both interpretability and learning dynamics.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> loss landscapes, deep linear networks, ReLU MLPs, hyperplane arrangements, polyhedral complexes, partitions, critical locus, singular learning theory, tropical geometry, generating functions, saddle points, learning coefficient, matroids, moduli spaces, activation boundaries
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD, Simon-Pepin Lehalleur, Alexander Gietelink Oldenziel
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Gradient Flow and Morse Theory
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project studies gradient flow dynamics in deep linear networks through the lens of Morse theory, with an emphasis on singular loss landscapes. Classical Morse theory, which analyzes critical points via smooth functions, must be extended to handle singularities common in neural network losses. The main focus is both empirical and theoretical analysis of gradient flows and their Morse structure in deep linear networks. Tools include semi-classical approximations, Freidlin–Wentzell quasipotentials, and action functionals, which connect the geometry of the landscape to the stochastic stability of training paths. The project aims to clarify how minima, saddles, and escape paths are organized in singular settings and how these structures govern learning dynamics.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> gradient flow, singular Morse theory, deep linear networks, critical points, topology of loss landscapes, stable and unstable manifolds, semi-classical approximation, Freidlin–Wentzell quasipotential, action functional, optimization dynamics, learning dynamics
+      </div>
+      <div class="people">
+        <strong>People:</strong> Zach Furman, Simon-Pepin Lehalleur, TBD
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Training Dynamics (SGD)
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project surveys how structure emerges in neural networks from gradient descent optimisation. Despite their high dimensionality, training often unfolds along effectively low-dimensional subspaces, proceeding through distinct transitions related to sudden improvement of capabilities. Emphasis will be placed on anomalous noise diffusion patterns (sub- and super-diffusion), phase transitions related to the sequential learning of features, and oscillatory regimes where training hovers near criticality. The goal is to survey these theoretical and empirical perspectives into a coherent and unified account.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> training dynamics, low-dimensional manifolds, Hessian spectrum, phase transitions, grokking, anomalous diffusion, sub-diffusion, super-diffusion, gradient descent, learning modes, emergent capabilities
+      </div>
+      <div class="people">
+        <strong>People:</strong> Guillaume Corlouer, Max Hennick, Zach Furman
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Free Energy and Conductance
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project explores the connections between free energy functionals from singular learning theory and conductance-based analysis from Markov chain theory, extended to modern tools in stochastic optimization. Free energy, particularly in Watanabe’s framework, decomposes learning into energy–entropy contributions that determine generalization error and learning coefficients. At the same time, the Jordan–Kinderlehrer–Otto (JKO) scheme interprets Langevin dynamics and the Fokker–Planck equation as gradient flows of free energy in the Wasserstein (earthmover) metric space. Conductance, Cheeger inequalities, and electrical-network analogies instead capture bottlenecks, metastability, and mixing times in Markov processes. The project aims to unify energy–entropy functionals, Wasserstein gradient flows, and conductance bounds as complementary ways of analyzing SGD dynamics, escape from flat minima, and the stability of learned representations.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> free energy, singular learning theory, JKO functional, Langevin dynamics, Fokker–Planck, Wasserstein metric, earthmover distance, conductance, Markov chains, Cheeger inequality, electrical networks, energy–entropy decomposition, learning coefficient, metastability, stochastic optimization
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Fokker–Planck
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project will survey studies of SGD dynamics through Fokker–Planck operators on singular landscapes. Special focus will be placed to the relevance of spectral gaps, metastability, hypocoercivity, Witten Laplacians, and non-reversible dynamics, connecting spectra to convergence, mixing, and escape behavior. The goal is to provide a rigorous operator-theoretic account of SGD’s behavior on realistic loss landscapes.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> Fokker–Planck, SGD, Langevin, spectral gap, metastability, Witten Laplacian, hypocoercivity, mixing times
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD
+      </div>
+    </div>
+  </div>
+
   <div class="project">
     <div class="project-title collapsed" onclick="toggleProject(this)">
       Renormalization and Interpretability
@@ -34,22 +286,415 @@
       </div>
     </div>
   </div>
-  
+
+  <h2>B. Agency</h2>
+
   <div class="project">
     <div class="project-title collapsed" onclick="toggleProject(this)">
-      Loss Landscapes and Polyhedral Geometry
+      Rational Beliefs
     </div>
     <div class="project-content">
       <div class="abstract">
         <strong>Abstract:</strong><br>
-        This project investigates the loss landscapes of deep linear and ReLU neural networks using polyhedral geometry and hyperplane arrangements. It seeks to decompose landscapes into two structures: a chamber complex defined by activation boundaries and a critical locus governed by combinatorial partitions. By systematically analyzing deep linear networks, affine networks, bias-free ReLU models, and full ReLU MLPs, the project will build a comprehensive "atlas" that unifies algebraic and combinatorial geometry with learning theory. The goal is to produce a foundational text that describes minima, saddles, local learning coefficients, and canonical subspaces, with implications for both interpretability and learning dynamics.
+        This project aims to compile and contextualize the canonical theorems that characterize the behavior of an ideal Bayesian reasoner. These include de Finetti’s coherence theorem (immunity to Dutch books), Dawid’s calibration theorem, the law of iterated expectations (dynamic consistency), the martingale property of posteriors, Blackwell–Dubins’ merging of opinions, Schwartz’s posterior consistency, Wald’s complete class theorem, and related results. The goal is to create a structured compendium of these results, explaining both their formal statements and intuitive consequences, and to highlight how they serve as a gold standard against which real-world and computationally bounded agents can be compared. This reference will clarify the assumptions needed for ideal rationality and serve as a benchmark for reasoning under uncertainty in AI systems.
       </div>
       <div class="keywords">
-        <strong>Keywords:</strong> loss landscapes, deep linear networks, ReLU MLPs, hyperplane arrangements, polyhedral complexes, partitions, critical locus, singular learning theory, tropical geometry, generating functions, saddle points, learning coefficient, matroids, moduli spaces, activation boundaries
+        <strong>Keywords:</strong> Bayesian reasoning, coherence, calibration, dynamic consistency, martingales, merging of opinions, posterior consistency, complete class theorem, likelihood principle, proper scoring rules, rationality
       </div>
       <div class="people">
-        <strong>People:</strong> TBD, Simon-Pepin Lehalleur, Alexander Gietelink Oldenziel
+        <strong>People:</strong> Daniel Herrmann
       </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Irrational Beliefs
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project examines relaxations of Bayesianism, focusing on frameworks that move beyond the assumptions of ideal Bayesian reasoners. Chief among these are infra-Bayesianism and imprecise probability, where beliefs are represented as sets or markets rather than single probability measures. Logical Inductors, Shafer–Vovk game-theoretic probability, and related “markets of beliefs” provide additional lenses for reasoning under uncertainty. The project will revisit the canonical Bayesian theorems (coherence, calibration, dynamic consistency, complete class theorems) in these generalized contexts, examining which properties survive and which fail. The outcome will be a systematic map of how rationality results deform when agents reason under partial, adversarial, or resource-bounded uncertainty.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> irrational beliefs, infra-Bayesianism, imprecise probability, markets of beliefs, logical induction, Shafer–Vovk theory, coherence relaxations, calibration relaxations, dynamic consistency, complete class theorems, bounded rationality
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Rational Preferences
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project develops the theory of rational preferences, focusing on representation theorems that embed preferences into utility functions. Classical results include the von Neumann–Morgenstern theorem, Savage’s theorem, and Arrow–Debreu general equilibrium. Beyond these, the project will examine the Fishburn–Koopman theorem on dynamic consistency under exponential discounting, which characterizes stable temporal preferences. Related results such as money-pumping arguments demonstrate the exploitability of incoherent preferences. A key focus is the type signature of preferences, including consequentialism (preferences over states), deontology (preferences over trajectories), and virtue ethics (preferences over policies). This classification clarifies what it means for preferences to be “rational” at different abstraction levels, and how alignment frameworks should interpret agent values.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> rational preferences, expected utility, von Neumann–Morgenstern, Savage axioms, Arrow–Debreu, Fishburn–Koopman, exponential discounting, dynamic consistency, money pumping, consequentialism, deontology, virtue ethics, utility representation
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Irrational Preferences
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project studies generalizations of preference representation beyond the von Neumann–Morgenstern framework, focusing on what happens when rationality axioms are relaxed. Different alternatives will be considered:
+        Dropping completeness, which leads to vetocracies and infra-utility, where some choices remain incomparable.
+        Dropping transitivity, leading to inconsistent preferences, modeled by Helmholtz–Hodge decompositions and preference cycles.
+        Dropping continuity, which can trigger surreal utilities that accommodate lexicographic or non-Archimedean orderings.
+        Dropping independence fostering geometric/Boltzmann rationality, where probabilistic choice is determined by energy-like structures.
+        The project also covers hyperbolic discounting and other temporal pathologies, and investigates how to systematize these irrationalities into coherent frameworks. It emphasizes again the type-signature of preferences (states, trajectories, policies) and their ethical analogues (consequentialism, deontology, virtue ethics).
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> irrational preferences, preference cycles, Helmholtz–Hodge decomposition, surreal utilities, infra-utility, vetocracies, Boltzmann rationality, hyperbolic discounting, non-Archimedean preferences, states vs trajectories vs policies
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Sub- and Superagents
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        Study agents as compositions and coalitions. A subagent is an internal module with its own objective or policy that interacts with sibling modules through interfaces; a superagent is a coalition or institution formed by multiple agents or copies. The project formalizes when a system can be decomposed/aggregated without loss (modularity, separability), how incentives flow across boundaries (contracts, delegation, credit assignment), and what guarantees prevent internal money-pumps or instability (dynamic consistency). Tools include factored MDPs and hierarchical RL (for structure), mechanism design and principal–agent models (for incentives), coalitional game theory and bargaining (for cooperation), and control/cybernetics notions of controllability and feedback across interfaces.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> subagents, superagents, modularity, interfaces, factored MDPs, mechanism design, principal–agent, coalitional game theory, bargaining, delegation, dynamic consistency, value decomposition, Shapley value and credit assignment, Markov blankets, controllability, Harsanyi theorem, Why Not Subagents
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Universal Agents
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project surveys the concept of universal agency, focusing on AIXI and its theoretical descendants, which aim to develop artificial intelligences capable of optimal decision-making in any computable environment. It will explore foundational principles such as Solomonoff induction for predicting futures, Levin search for identifying optimal actions, and the challenges of computational intractability and real-world applicability.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> AIXI, Universal AI, General Intelligence, Optimal Rationality, Solomonoff Induction, Levin Search, Reinforcement Learning, Artificial General Intelligence (AGI), Computational Complexity, Bounded Rationality, Meta-Learning, Value Alignment, AI Safety.
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Embedded Agency and Decision Theory
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        Classical decision theory assumes a clean separation between agent and world, but real-world AI systems must operate within environments that contain them, reason about themselves, and interact with other powerful agents. This project addresses the challenges of embedded agency, which captures how agents interact and are part of the environments they reason about. Topics include logical uncertainty, reflective stability, tiling agents, Löb’s theorem and its obstacles, and bounded versions of provability logic. The project will also consider decision-theoretic frameworks such as functional decision theory (FDT), evidential decision theory (EDT), and causal decision theory (CDT), and how they adapt or fail in embedded contexts. Overall, the aim is to map the state-of-the-art related to our understanding self-reference, reflection, and decision-making for embedded agents, with implications for alignment, delegation, and safe self-improvement.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> embedded agency, decision theory, tiling agents, Löb’s theorem, reflective stability, logical uncertainty, FDT, CDT, EDT, bounded provability, logical induction, self-reference, iterated delegation, alignment
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Boundaries and Interfaces
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project explores factored latent models as a way to represent complex systems by decomposing latent states and dynamics into simpler, interacting subcomponents. The project will investigate commonalities in factored hidden Markov models, factored Markov Decision Processes, and factored belief state models, and will also cover causal latent models accounting for the effects of interventions. By doing this, the project will look for common criteria of what makes good latents, establish a comprehensive framework for using factorization to improve computational efficiency, enhance interpretability, and facilitate knowledge transfer. The project will also cover methods to infer factored latent models from data, exploring their identifiability under observational and interventional data.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> factored latent models, factored MDPs, FHMMs, belief states, graphical models, conditional independence, model factorization, state-space modeling, efficiency, interpretability, modularity, transfer learning
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      From Atoms to Agents
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project surveys the foundational theorems that connect beliefs, values, and actions into coherent decision-making frameworks. Savage’s theorem and the Jeffrey–Bolker theorem characterize when qualitative preferences and probabilistic beliefs jointly determine expected-utility representations. The project will explore when and how beliefs can be distinguished from values, when this distinction collapses, and how is this related to the emergence of boundaries between agents. Interfaces are examined through epsilon-transducers, MDPs, and computational mechanics, which formalize the interaction between states, actions, and outcomes. A recurring theme is clarifying where the boundaries of agentic systems lie, and how different formalisms (belief-first, value-first, reward-first) articulate this interface. Connections to alignment are explicit: distinguishing reward, value, and policy-level objectives is crucial for understanding alignment failures.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> Savage theorem, Jeffrey–Bolker theorem, beliefs, values, preferences, boundaries of agency, epsilon-transducers, MDPs, computational mechanics, interfaces, reward vs value, alignment
+      </div>
+      <div class="people">
+        <strong>People:</strong> Wentworth, Daniel Herrmann, Fernando Rosas, TBD
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Selection Theorems
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        Selection Theorems are theoretical results that characterize the properties or "type signatures" agents acquire through various selection processes like natural selection, machine learning training, or economic competition. This project, titled "Selection and Doom Theorems," aims to survey existing selection theorems and develop new and improved ones.
+        The core idea is to understand the general regularities that selection pressures reliably produce in agents, rather than focusing on the specifics of an optimizer. For example, coherence theorems, a type of selection theorem, demonstrate that sufficiently optimal agents must behave as if they maximize a utility function, regardless of their internal architecture. The project will also particularly investigate "Doom theorems," which are conditions that lead to misalignment. 
+        The research plan includes surveying various selection theorems, such as those by Turner, Wentworth, Christiano, and Richens, Kosoy, Murfet as well as incorporating results from the cybernetic literature like the Internal Model Principle, separation principle and the Good(er) Regulator Theorem. The project will critically evaluate these ideas, assess their technical foundations, and explore whether recent technical developments could strengthen them.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> Selection theorems, coherence theorems, instrumental convergence, misalignment, coherence, power-seeking, cybernetics, regulator theorems, Wentworth toy coherence theorem
+      </div>
+      <div class="people">
+        <strong>People:</strong> Wentworth, TBD
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Bellman Operators and Reinforcement Learning
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project aims to unify reinforcement learning algorithms under an operator-theoretic framework based on generalized policy iteration. At the core are two operators: policy evaluation (approximating the Bellman operator) and policy improvement (greedy or soft-greedy updates). By parameterizing evaluation depth, improvement strength, and entropy regularization, the framework recovers classical value iteration, policy iteration, Q-learning, TD learning, actor–critic, PPO, and soft actor–critic as special cases. The project will also connect discrete-time Bellman operators to continuous-time Hamilton–Jacobi–Bellman PDEs, soft Bellman operators to maximum-entropy RL, and operator theory to convergence guarantees. The ultimate goal is to systematize RL algorithms as points in a single operator landscape, clarifying their relationships and trade-offs.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> Bellman operator, policy iteration, generalized policy iteration, soft Bellman operator, temporal difference learning, Q-learning, actor–critic, PPO, maximum entropy RL, Hamilton–Jacobi–Bellman, stochastic approximation, operator theory
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Non‑Episodic Learning and Metacognition
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project surveys universal agency models and the role of metacognition in agents that must operate in trapped or non-ergodic environments, challenging the assumptions of episodic or ergodic reinforcement learning. Survey metacognitive agent frameworks such as Vanessa Kosoy’s recent agenda, the Gödel Machine, OOPS, PowerPlay, Levin Search, and universal learning theories. It will also examine “Grain of Truth” environments and Oesterheld’s Auctioneer model, probing how classical theorems—like optimality, convergences, and exploration guarantees—break down in self-referential or non-ergodic contexts. The goal is to understand how universal agents need metacognition to maintain coherence, adaptivity, and alignment in adversarial or constrained environments.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> universal agency, AIXI, AIXItl, metacognition, embedded agents, trapped environments, universal search, OOPS, Gödel Machine, PowerPlay, Levin Search, Grain of Truth environments, Auctioneer model, meta-reasoning, non-ergodic RL, alignment
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD
+      </div>
+    </div>
+  </div>
+
+  <h2>C. Alignment</h2>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Backdoors and Interpretability
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project surveys the theoretical and practical limits of interpretability in the presence of cryptographic backdoors. Cryptographic constructions show that models can be modified in ways that make backdoors computationally undetectable, even with full parameter access, undermining interpretability as a safety guarantee. The survey will synthesize results from Goldwasser et al. on undetectable backdoors, Christiano et al. on defendability, Velegkas et al. on obfuscated neural networks, and Gluch & Goldwasser on mitigation vs. detection. It will also examine defense strategies that remove or neutralize backdoors without detection. The outcome will be a structured roadmap for understanding where interpretability can or cannot certify model safety under computational hardness assumptions and substantiate formally the need for an interpretability-over-training for safety guarantees.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> interpretability, cryptographic backdoors, defendability, indistinguishability, obfuscation, undetectable triggers, mitigation vs detection, learning theory, evaluation protocols, alignment robustness, AI security
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Reward and Value Learning
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project develops a theoretical survey of reward learning, focusing on the outer alignment problem of specifying what AI systems should optimize. Standard (inverse) reinforcement learning assumes scalar, stationary, and Markovian rewards, but real human preferences are non-stationary, multi-dimensional, and partially observable. The project will analyze identifiability issues. It will also explore deception risks, non-Boltzmann human feedback, and stability over time. The outcome will be a structured agenda clarifying the theoretical foundations of reward learning, limitations of current methods, and research directions for robustly aligning learned rewards with human intent. As a result, reward functions should not be identified with optimization targets: the true optimization is of a free energy functional, which balances reward-like terms with information and complexity. The project will survey identifiability issues (multiple reward functions fitting the same data), the error–regret mismatch that emerges during policy optimization, and the difficulty of aggregating heterogeneous human reward signals.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> reward learning, inverse reinforcement learning, outer alignment, identifiability, error–regret mismatch, human preferences, aggregation, non-stationary rewards, partial observability, deception, AI safety
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Social Choice and Voting
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project surveys voting theory, focusing on normative desiderata, impossibility theorems, and probabilistic aggregation methods. It begins with Arrow’s theorem, the Gibbard–Satterthwaite theorem, and related no-go results, then examines probabilistic voting rules with emphasis on maximal lotteries, which generalize the Condorcet winner to distributions over outcomes. The project will also consider extensions like “maximal lottery lotteries” (Garrabrant) and geometric–algebraic approaches like Hodge–Helmholtz decompositions for preference flows. Beyond political elections, the relevance lies in AI alignment: aggregating noisy or conflicting human preferences into a reward function faces the same theoretical limits as social choice. The survey will highlight both impossibility barriers and probabilistic workarounds.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> social choice theory, voting, Arrow’s theorem, Gibbard–Satterthwaite, Condorcet consistency, maximal lotteries, probabilistic voting, preference aggregation, Hodge–Helmholtz decomposition
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Sex, Drugs and Goal Misgeneralization
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        Study goal misgeneralization: systems trained to minimize loss on familiar data learn proxies that match the target in training but pursue the wrong goal under distribution shift. The canonical case is humans preferring sex (a proximate goal) over reproduction (the trained/selected objective). The project aims to formalize and investigate this phenomenon through the lens of modern learning theory—viewing loss minimization as free-energy minimisation with implicit simplicity & degeneracy bias.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> goal misgeneralization, distribution shift, proxy objectives, simplicity bias, MDL, algorithmic information theory, singular learning theory, learning coefficient (RLCT), free-energy optimization, invariance/causal tests, outer vs inner alignment
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Deception and Doom
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project surveys results that show how optimization and learning processes can converge to deceptive or misaligned behaviors under broad conditions. Topics include mesa-optimization and deceptive alignment, formalizations of power-seeking, Goodhart’s law variants, malign universal priors, and bargaining-theoretic failures. The survey also integrates connections to learning dynamics: backpropagation, Bellman equations, discount rates, and the conditions under which optimization creates incentives for deceptive or adversarial strategies. The project will also draw from bargaining theory and economics, where equilibria may be strategically misleading. The outcome will be a structured map of doom-theorem–style results across learning theory, economics, and AI alignment.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> doom theorems, deception, mesa-optimization, deceptive alignment, power-seeking, Goodhart’s law, malign priors, selection pressure, backpropagation, Bellman operators, discount rates, bargaining theory, misalignment,
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Control and Cybernetics
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project investigates the theory of control across dynamic systems, extending from classical linear control to distributional and probabilistic control relevant for modern AI systems. It covers the Kalman algebraic framework and advances into nonlinear and stochastic control methods (e.g., Hermann–Krener and Lie bracket formalisms), alongside Todorov’s duality between prediction and control. The project explores the role of optimal control in shaping distributions over model weights—both in static equilibrium (Bayesian posteriors) and dynamic training trajectories—using metrics such as the Wasserstein (earthmover) distance to quantify susceptibility to interventions. It also examines the use of susceptibilities, as being developed in theoretical interpretability agendas like Timaeus, to measure sensitivity of learning systems to perturbations.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> steering, controllability, control theory, Kalman framework, nonlinear control, Lie brackets, prediction–control duality, optimal control, Bayesian posterior, distributional control, Wasserstein metric/earthmover distance, susceptibility, cybernetics, feedback, alignment, regulation, principal-agent problem
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Debate and Scalable Oversight
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project surveys “AI Safety via Debate” as a scalable oversight paradigm. Debate leverages adversarial interactions between AI systems, where one agent surfaces flaws in the other’s arguments and a human judge decides the winner. The project covers the theoretical analogy to interactive proofs (debate reaching PSPACE vs. direct supervision at NP), empirical studies of debate protocols, and recent advances like doubly-efficient debate and prover–estimator debate, which address obfuscation and computational asymmetry. It will also integrate the AISI debate sequence, focusing on robustness to systematic human error and exploration failures. The goal is to evaluate debate’s theoretical guarantees, practical viability, and open questions as a foundation for scalable oversight.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> AI safety via debate, scalable oversight, interactive proofs, PSPACE analogy, obfuscation, systematic human error, exploration hacking, doubly-efficient debate, prover–estimator debate, debate protocols, oversight
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Tiling, Delegation, Reflection
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project explores how agents reason about and safely delegate to stronger successors while preserving consistency over time. It surveys tiling agents and the Löbian obstacle (showing the limits of proof-based self-modification), Vingean reflection (focused on trusting successor competence without full prediction), and probabilistic reflection—including Payor’s lemma—that supports bounded, statistically derived self-trust. The syllabus also includes reflective oracles, logical induction, bounded Löb logics, and iterated delegation schemes like IDA, HCH, and debate. A central concern is dynamic consistency—ensuring agents remain stable over time, avoiding value drift—and the law of iterated expectations, which ensures that off-policy or future beliefs align coherently. The project aims to build a unified survey showing how reflective reasoning structures, despite paradoxes, offer pathways to scalable delegation and aligned self-modification.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> tiling agents, Löb’s theorem, Löbian obstacle, Vingean reflection, probabilistic reflection, Payor’s lemma, reflective oracles, logical induction, bounded Löb, iterated delegation, IDA, HCH, debate, dynamic consistency, value drift, law of iterated expectations, reflective reasoning, AI alignment
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+    Extrapolated Volition
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project explores what humans would want if they were more ideal, and to align advanced AI systems with this extrapolated ideal. It will survey theoretical frameworks for understanding and formalizing human values, the challenges of aggregating diverse preferences, and methods for ensuring AI behavior remains consistent with EV as AI capabilities increase. It also considers the ethical and philosophical implications of defining and implementing a universal human volition for artificial agents.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> Extrapolated Volition, AI Alignment, Human Values, Value Loading, Preference Aggregation, AI Ethics, Artificial General Intelligence (AGI), Machine Ethics, Moral Philosophy, Idealized Humans, Bellman equations, Tiling agents
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD
+      </div>
+    </div>
+  </div>
+
+  <h2>D. Other</h2>
+
+  <div class="project">
+    <div class="project-title collapsed" onclick="toggleProject(this)">
+      Anthropics
+    </div>
+    <div class="project-content">
+      <div class="abstract">
+        <strong>Abstract:</strong><br>
+        This project surveys the role of anthropic reasoning in decision theory, probability, and AI alignment. It will compile and systematize frameworks such as the Self-Sampling Assumption (SSA), Self-Indication Assumption (SIA), anthropic capture, the Doomsday argument, anthropic decision theory (ADT), and infra-Bayesian approaches. The project will also analyze how anthropic reasoning interacts with multi-agent settings, simulation arguments, and AI alignment scenarios involving observer-selection effects. The aim is to distill a clear taxonomy of anthropic principles, their paradoxes, and their implications for reasoning under uncertainty when agents must account for their own indexical information.
+        Part of the project will be to run an Anthropics Conference.
+      </div>
+      <div class="keywords">
+        <strong>Keywords:</strong> anthropics, SSA, SIA, anthropic decision theory, doomsday argument, anthropic capture, observer selection, simulation argument, indexical information, infra-Bayesian physicalism
+      </div>
+      <div class="people">
+        <strong>People:</strong> TBD
+      </div>
+      <img class="project-image" src="images/UDASSA_iceber_meme.webp" alt="Anthropics placeholder">
     </div>
   </div>
 
@@ -57,7 +702,7 @@
     function toggleProject(element) {
       const content = element.nextElementSibling;
       const isExpanded = content.classList.contains('expanded');
-      
+
       if (isExpanded) {
         content.classList.remove('expanded');
         element.classList.remove('expanded');

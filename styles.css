@@ -69,13 +69,13 @@ h2 {
 
 .keywords {
   margin-bottom: 15px;
-  font-style: italic;
-  color: #666;
+  font-style: normal;
+  color: inherit;
 }
 
 .people {
   font-weight: bold;
-  color: #444;
+  color: inherit;
 }
 
 
@@ -145,4 +145,12 @@ blockquote.quote cite {
   margin-top: 8px;
   color: #666;
   font-size: 0.95rem;
+}
+
+/* Project inline image within project content */
+.project-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 12px;
 }
