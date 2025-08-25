@@ -74,7 +74,7 @@ a {
 }
 
 a:visited {
-  color: #0b0080; /* classic visited purple */
+  color: #0645ad; /* match normal link blue */
 }
 
 a:hover,
@@ -253,4 +253,26 @@ blockquote.quote cite {
 hr {
   display: none !important;
   border: none !important;
+}
+
+/* Mobile-only comfortable reading sizes */
+@media (max-width: 640px) {
+  body { font-size: 1.05rem; }
+  h1 { font-size: 1.7rem; }
+  h2 { font-size: 1.25rem; }
+  .project-title { font-size: 1.05rem; }
+  .figure .caption { font-size: 1rem; }
+}
+
+/* Global footer */
+footer.site-footer {
+  margin-top: 48px;
+  padding-top: 16px;
+  color: var(--fg-muted);
+  font-size: 0.9rem;
+}
+
+/* Use default link styling in footer */
+footer.site-footer a {
+  font-family: ui-monospace, "SF Mono", "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
 }
