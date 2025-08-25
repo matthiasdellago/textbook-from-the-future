@@ -1,3 +1,8 @@
+/* Viewport hint: ensure mobile browsers size correctly */
+@viewport {
+  width: device-width;
+  zoom: 1.0;
+}
 :root {
   --bg-light: #ffffff;
   --fg-dark: #111213;
@@ -15,6 +20,21 @@ body {
   color: var(--fg-dark);
   font-size: 0.95rem;
   -webkit-font-smoothing: antialiased;
+}
+
+/* Ensure media never overflows containers */
+img, svg, video, canvas, iframe {
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+/* Project-specific images (e.g. UDASSA) */
+.project-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 /* Home quote */
@@ -131,6 +151,11 @@ a:focus {
 .project-content {
   padding: 0.5em 0 0 1.5em; /* small indent for answers */
   display: none;
+}
+
+/* Prevent horizontal overflow in project content */
+.project-content {
+  overflow-x: hidden;
 }
 
 .project-content.expanded {
