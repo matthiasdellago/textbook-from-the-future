@@ -10,6 +10,12 @@
   --accent: #334abf; /* restrained blue accent */
 }
 
+/* Prevent iOS Safari from "font boosting" some blocks differently */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   max-width: 800px;
@@ -56,10 +62,11 @@ h1, h2 {
   color: var(--fg-dark);
   margin-top: 2em;
   margin-bottom: 0.8em;
+  text-wrap: balance;
 }
 
 h1 {
-  font-size: 1.6rem;
+  font-size: 1.75rem;
   padding-bottom: 0.4em;
 }
 
@@ -86,9 +93,10 @@ a:focus {
 .site-nav {
   position: sticky;
   top: 0;
+  z-index: 10;
   background: var(--bg-light);
-  margin: -30px auto 30px;
-  padding: 10px 0;
+  margin: calc(-30px - env(safe-area-inset-top)) auto 30px;
+  padding: calc(10px + env(safe-area-inset-top)) 0 10px;
 }
 
 .site-nav a {
@@ -119,6 +127,15 @@ a:focus {
   font-weight: bold;
 }
 
+/* Accessible focus rings */
+a:focus-visible,
+.site-nav a:focus-visible,
+.project-title:focus-visible {
+  outline: 2px solid var(--fg-dark);
+  outline-offset: 2px;
+  text-decoration: none;
+}
+
 /* Project & FAQ blocks */
 .project {
   margin-top: 1.5em;
@@ -135,6 +152,7 @@ a:focus {
   align-items: flex-start;
   margin: 1em 0;
   border: none; /* no lines */
+  padding: 6px 0; /* increase tap target size */
 }
 
 /* arrow on the LEFT */
@@ -258,10 +276,21 @@ hr {
 /* Mobile-only comfortable reading sizes */
 @media (max-width: 640px) {
   body { font-size: 1.05rem; }
-  h1 { font-size: 1.7rem; }
+  h1 { font-size: 1.8rem; }
   h2 { font-size: 1.25rem; }
   .project-title { font-size: 1.05rem; }
   .figure .caption { font-size: 1rem; }
+}
+
+/* Larger tap targets on touch devices */
+@media (pointer: coarse) {
+  .site-nav a { padding: 8px 0; }
+  .project-title { padding: 10px 0; }
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .project-title::before { transition: none; }
 }
 
 /* Global footer */
