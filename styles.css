@@ -124,3 +124,21 @@ blockquote.quote cite {
   font-style: normal;
   text-align: right;
 }
+
+/* Figure */
+.figure {
+  margin: 24px 0;
+  text-align: center;
+}
+
+.figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.figure .caption {
+  margin-top: 8px;
+  color: #666;
+  font-size: 0.95rem;
+}

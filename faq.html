@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FAQ - Textbook from the Future</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <a href="index.html">Vision</a>
+    <a href="projects.html">Projects</a>
+    <a href="join.html">Join Us</a>
+    <a href="faq.html" class="active">FAQ</a>
+  </nav>
+
+  <h1>FAQ</h1>
+
+  <div class="project">
+    <div class="project-title" onclick="toggleProject(this)">Why theory?</div>
+    <div class="project-content">
+      <p>Trial and error works when failure is cheap. For the alignment of superintelligent AI we may only have one try. Only mathematical theory can provide assurance when there is no second try.</p>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title" onclick="toggleProject(this)">Isn't alignment unsolved — how can you write a textbook on it?</div>
+    <div class="project-content">
+      <p>The Textbook from the Future is a concept introduced by Yudkowsky.</p>
+      <blockquote class="quote">
+        “So, if we had the <strong>textbook from the future</strong>, like we have the textbook from 100 years in the future, which contains all the simple tricks that actually work robustly, then it would be much easier. But right now, we don't have that. We're groping in the dark.”
+        <cite>— Eliezer Yudkowsky</cite>
+      </blockquote>
+      <blockquote class="quote">
+        “If you have the <strong>Textbook From 100 Years In The Future</strong> that gives the simple robust solutions for everything, that actually work, you can write a super-intelligence that thinks 2+2=5 because the Textbook gives the methods for doing that which are simple and actually work in practice.”
+        <cite>— Eliezer Yudkowsky</cite>
+      </blockquote>
+      <p>While the specific contents are beyond our current knowledge, we can already guess its overall gestalt—the table of contents. We are not certain of the answers, but we do know the questions it must answer. Committing that “table of contents” to paper gives a skeleton the community can flesh out, and the work can start now.</p>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title" onclick="toggleProject(this)">Why a textbook?</div>
+    <div class="project-content">
+      <p>The textbook is a coordination instrument—a shared context for a research programme and a tool for establishing coherence in the field. It is a blueprint for a solution and an onboarding tool for new researchers, experts from other fields, and future AIs.</p>
+      <blockquote class="quote">The textbook from the future is nothing without its people.</blockquote>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title" onclick="toggleProject(this)">What specific failure modes do you expect current red-teaming and oversight to miss?</div>
+    <div class="project-content">
+      <p>The framing of “specific failure modes” is common but can mislead. Purely training on behavioral (black‑box) loss functions selects for deceptiveness in the limit. Thoughts are upstream of actions; a sufficiently smart adversary may lie in wait. The deeper problem is structural: advanced systems will be strongly optimized for deception when oversight itself is the bottleneck. Red‑teaming can find surface‑level bugs, but not the core incentive toward concealed misalignment.</p>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title" onclick="toggleProject(this)">I am skeptical that AI is actually useful in research</div>
+    <div class="project-content">
+      <p>Already, our work would not be possible without reasoning models. Two chapters—on training dynamics of SGD and on polyhedral geometry and neural network architectures—became tractable only with strong reasoning models in late 2024. The needed expertise (continuum limits and SDEs, spectral theory of Fokker–Planck operators, polyhedral geometry) is rare; AI assistance unlocks leverage.</p>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title" onclick="toggleProject(this)">Is this a nerdsnipe? Why not focus on evals, CoT, mechanistic interpretability?</div>
+    <div class="project-content">
+      <p>We cannot yet know if we live in the “easy alignment” or “hard alignment” world. Prosaic methods cover much of the easy regime; the hard regime is neglected. Our approach complements prosaic methods by developing the theoretical spine needed if the world is on the difficult side of the spectrum.</p>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title" onclick="toggleProject(this)">My favorite topic X isn’t mentioned</div>
+    <div class="project-content">
+      <p>We aim for a <em>selective synthesis</em>. It’s a big tent but not a kumbaya; favorites may not appear.</p>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title" onclick="toggleProject(this)">You misattributed idea X</div>
+    <div class="project-content">
+      <p>Scholarly credit matters. If you have suggestions or corrections about authorship, contributions, or credit allocation, please contact us.</p>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title" onclick="toggleProject(this)">What if topic X is irrelevant and topic Y is crucial?</div>
+    <div class="project-content">
+      <p>It’s a living document. Think of a hybrid between a curated encyclopedia and a linear textbook; we will adapt as evidence accumulates.</p>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title" onclick="toggleProject(this)">Future architectures will differ—won’t this make the work obsolete?</div>
+    <div class="project-content">
+      <p>Yes and no. AI will look different, but mathematics yields timeless knowledge. Much of the book concerns fundamentals (simplicity/degeneracy, abstractions, agent foundations, learning theory). We expect these to persist. Moreover, we can already anticipate the increasing role of reinforcement learning.</p>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title" onclick="toggleProject(this)">Why a megaproject? Can megaprojects work in theory?</div>
+    <div class="project-content">
+      <p>Yes. Despite the myth of isolated genius, large coordinated efforts have driven major theoretical progress (from Euclid’s Elements to EGA/SGA and modern megaprojects). Waiting for miracles is not a plan; organized theory is actionable.</p>
+      <blockquote class="quote">
+        <p>“Take for example the task of proving a theorem that remains hypothetical... One approach is the hammer and chisel... The other is the sea. The sea advances insensibly and in silence... yet it finally surrounds the resistant substance.”</p>
+        <cite>— Alexander Grothendieck</cite>
+      </blockquote>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title" onclick="toggleProject(this)">How does this relate to Safeguarded AI (davidad’s plan)?</div>
+    <div class="project-content">
+      <p>The safeguarded AI program develops a safety envelope around always‑dangerous systems. Key differences:</p>
+      <ul>
+        <li>That plan focuses on <em>control</em>; we focus on <em>alignment</em>.</li>
+        <li>It follows one person’s vision; we synthesize many theory‑driven agendas.</li>
+        <li>It is a plan; this is a program—open directions rather than a fixed blueprint.</li>
+        <li>This book does not use category theory.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title" onclick="toggleProject(this)">Will you use Lean or other automated theorem provers?</div>
+    <div class="project-content">
+      <p>As of 2025, automated theorem provers are not yet practical for everyday research. The hardest problems in theoretical alignment are primarily about formalizing ideas and deriving algorithms, not about proving isolated deep theorems. That said, integrating provers with reasoning models is the natural next step, and we plan to adopt them when competitive.</p>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title" onclick="toggleProject(this)">Has theory already failed?</div>
+    <div class="project-content">
+      <p>Reports of the death of theory are exaggerated—often a matter of fads and legibility. Important theoretical pieces for alignment already exist and are being extended.</p>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title" onclick="toggleProject(this)">How does this relate to other approaches?</div>
+    <div class="project-content">
+      <p>The textbook will cover, among other things:</p>
+      <ul>
+        <li>Heuristic Arguments (ARC)</li>
+        <li>Developmental Interpretability (devInterp), based on Watanabe’s Singular Learning Theory</li>
+        <li>Safety‑by‑debate (Irving et al.)</li>
+        <li>Computational mechanics approaches to interpretability</li>
+        <li>Theoretical reward learning</li>
+        <li>Agent Foundations (MIRI, Kosoy, Wentworth, and others)</li>
+        <li>Universal intelligence (AIXI by Hutter, Legg, etc.)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title" onclick="toggleProject(this)">Timelines are too short!</div>
+    <div class="project-content">
+      <p>If alignment is easy, prosaic alignment may suffice; if it is hard, a large‑scale theoretical effort is exactly what’s needed. Mathematics is highly leveraged by AI—our work is already accelerated by current tools, and that leverage will increase.</p>
+      <blockquote class="quote">The metaphor I usually use is that <strong>if a textbook from one hundred years in the future fell into our hands</strong>, containing all of the simple ideas that actually work robustly in practice, we could probably build an aligned super‑intelligence in six months. <cite>— Eliezer Yudkowsky</cite></blockquote>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title" onclick="toggleProject(this)">That seems very aggressive. Are you claiming finishing the textbook is alignment‑complete?</div>
+    <div class="project-content">
+      <p>No. The goal is to make the key questions legible and tractable, build a theoretical spine, and coordinate a community toward concrete progress.</p>
+    </div>
+  </div>
+
+  <!-- BEGIN AI SLOP (commented out per request) -->
+  <!--
+  --- FAQ Distillation FROM PFAU ---
+  Content omitted intentionally for now. Keeping as a placeholder to integrate later.
+
+  --- WARNING: AI SLOP SUMMARY BELOW ---
+  Additional Q&A items about wiki vs monograph, value proposition, quality control, structure, empirics linkage, engagement mechanisms, academics outreach, comparison with forums/Discord, openness, etc.
+  -->
+  <!-- END AI SLOP -->
+
+  <script>
+    function toggleProject(element) {
+      const content = element.nextElementSibling;
+      const isExpanded = content.classList.contains('expanded');
+      if (isExpanded) {
+        content.classList.remove('expanded');
+        element.classList.remove('expanded');
+      } else {
+        content.classList.add('expanded');
+        element.classList.add('expanded');
+      }
+    }
+  </script>
+</body>
+</html>
+
+
